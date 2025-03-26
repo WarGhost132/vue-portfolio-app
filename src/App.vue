@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import TheHeader from '@/components/TheHeader.vue'
+import TheFooter from '@/components/TheFooter.vue'
 </script>
 
 <template>
@@ -8,6 +9,8 @@ import TheHeader from '@/components/TheHeader.vue'
       <TheHeader />
   
       <RouterView class="py-20" />
+
+      <TheFooter />
     </div>
   </div>
 </template>
