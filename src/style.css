@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+html,
+#app {
+  @apply h-svh
+}
+
+body {
+  @apply bg-[#0f0f0f] text-white
+}
