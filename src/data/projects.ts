@@ -10,7 +10,8 @@ const projectData: Project[] = [
     year: 2025,
     role: 'Frontend Developer',
     link: 'https://vue-reusable-form.netlify.app/',
-    githubLink: 'https://github.com/WarGhost132/vue-reusable-form'
+    githubLink: 'https://github.com/WarGhost132/vue-reusable-form',
+    responsive: ['desktop']
   },
   {
     id: 1,
@@ -21,7 +22,8 @@ const projectData: Project[] = [
     year: 2025,
     role: 'Frontend Developer',
     link: 'https://nuxt-filter-feedbacks.netlify.app/',
-    githubLink: 'https://github.com/WarGhost132/nuxt-web-feedback'
+    githubLink: 'https://github.com/WarGhost132/nuxt-web-feedback',
+    responsive: ['desktop']
   },
   {
     id: 3,
@@ -32,7 +34,8 @@ const projectData: Project[] = [
     year: 2025,
     role: 'Frontend Developer',
     link: 'https://vue-creative-gallery.netlify.app/',
-    githubLink: 'https://github.com/WarGhost132/vue-creative-gallery'
+    githubLink: 'https://github.com/WarGhost132/vue-creative-gallery',
+    responsive: ['desktop']
   },
   {
     id: 2,
@@ -43,7 +46,8 @@ const projectData: Project[] = [
     year: 2025,
     role: 'Frontend Developer',
     link: 'https://nuxt-sim-center.netlify.app/',
-    githubLink: 'https://github.com/WarGhost132/nuxt-sim-center'
+    githubLink: 'https://github.com/WarGhost132/nuxt-sim-center',
+    responsive: ['desktop']
   },
   {
     id: 6,
@@ -54,7 +58,8 @@ const projectData: Project[] = [
     year: 2024,
     role: 'Frontend Developer',
     link: 'https://nuxt-practice-locale.netlify.app/',
-    githubLink: 'https://github.com/WarGhost132/nuxt-practice'
+    githubLink: 'https://github.com/WarGhost132/nuxt-practice',
+    responsive: ['desktop', 'tablet', 'mobile']
   },
   {
     id: 5,
@@ -65,7 +70,8 @@ const projectData: Project[] = [
     year: 2024,
     role: 'Frontend Developer',
     link: 'https://vue-inventory-feature.netlify.app/',
-    githubLink: 'https://github.com/WarGhost132/vue-rtl'
+    githubLink: 'https://github.com/WarGhost132/vue-rtl',
+    responsive: ['desktop']
   },
   {
     id: 4,
@@ -76,7 +82,8 @@ const projectData: Project[] = [
     year: 2024,
     role: 'Frontend Developer',
     link: 'https://react-crypto-practice.netlify.app/',
-    githubLink: 'https://github.com/WarGhost132/react-crypto-app'
+    githubLink: 'https://github.com/WarGhost132/react-crypto-app',
+    responsive: ['desktop']
   },
 ]
 
