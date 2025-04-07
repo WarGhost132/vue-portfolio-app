@@ -27,9 +27,9 @@ onMounted(() => {
       </div>
       <div class="flex flex-col justify-center">
         <span class="text-4xl font-semibold mb-4">{{ projectData.title }}</span>
-  
+
         <p class="font-light mb-8">{{ projectData.description }}</p>
-  
+
         <div class="flex flex-col">
           <div class="border-b border-zinc-700 pb-4 mb-4">О проекте</div>
           <div class="border-b border-zinc-700 pb-4 mb-4 flex justify-between items-center">
@@ -45,7 +45,7 @@ onMounted(() => {
             </div>
           </div>
         </div>
-  
+
         <div class="flex gap-4">
           <a
             :href="projectData.link"
