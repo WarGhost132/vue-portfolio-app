@@ -5,10 +5,12 @@
   <header class="relative top-0 left-0 right-0 z-50 w-full">
     <div class="container mx-auto flex justify-between items-center py-6">
       <div class="flex items-center gap-4">
-        <div>
-          <img src="/logo.png">
-        </div>
-        <div class="text-3xl font-bold">LoomCode</div>
+        <RouterLink to="/" class="flex items-center gap-4">
+          <div>
+            <img src="/logo.png">
+          </div>
+          <div class="text-3xl font-bold">LoomCode</div>
+        </RouterLink>
       </div>
       <div>
         <ul class="flex gap-8 text-lg">
