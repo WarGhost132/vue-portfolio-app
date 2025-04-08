@@ -36,7 +36,7 @@ const social: Social[] = [
       <div class="text-xl">
         <p>Передайте привет на <a href="mailto:wawghostick@gmail.com"
             class="border-b border-blue-500">wawghostick@gmail.com</a></p>
-        <p class="mb-12">Для получения дополнительной информации,<br>вот мое <a href="#"
+        <p class="mb-12">Для получения дополнительной информации,<br>вот мое <a href="https://kazan.hh.ru/resume/a7cea21cff0b16723d0039ed1f4d4449456473"
             class="border-b border-blue-500">резюме</a>
         </p>
 

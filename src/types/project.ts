@@ -1,4 +1,4 @@
-type Responsive = 'desktop' | 'tablet' | 'mobile'
+export type Responsive = 'desktop' | 'tablet' | 'mobile'
 
 export interface Project {
   id: number,
@@ -7,8 +7,10 @@ export interface Project {
   title: string,
   description: string,
   year: number,
-  role: string,
   link: string,
   githubLink: string,
-  responsive: Responsive[]
+  responsive: Responsive[],
+  tags: string[],
+  isFavorite: boolean,
+  helpText?: string,
 }

@@ -16,8 +16,8 @@ onMounted(() => {
 
 <template>
   <div v-if="projectData">
-    <div class="grid grid-cols-2 gap-12 h-[460px]">
-      <div class="bg-zinc-800 rounded-xl relative">
+    <div class="grid grid-cols-2 gap-12 h-full">
+      <div class="bg-zinc-800 rounded-xl relative h-[460px]">
         <div class="absolute top-5 left-5 bg-black px-4 py-2 rounded-full">
           {{ projectData.type }}
         </div>
@@ -40,10 +40,20 @@ onMounted(() => {
             <span>Адаптивность</span>
             <div class="flex items-center gap-2">
               <Icon icon="mynaui:desktop" class="size-8" :class="[projectData.responsive.includes('desktop') ? 'text-cyan-500' : 'text-gray-500']" />
-              <Icon icon="material-symbols:tablet" class="size-8" :class="[projectData.responsive.includes('tablet') ? 'text-cyan-500' : 'text-gray-500']" />
+              <Icon icon="material-symbols-light:tablet-outline" class="size-8" :class="[projectData.responsive.includes('tablet') ? 'text-cyan-500' : 'text-gray-500']" />
               <Icon icon="mynaui:mobile" class="size-8" :class="[projectData.responsive.includes('mobile') ? 'text-cyan-500' : 'text-gray-500']" />
             </div>
           </div>
+          <div class="border-b border-zinc-700 pb-4 mb-4 flex justify-between items-center">
+            <span>Теги</span>
+            <div class="flex items-center gap-2">
+              <span v-for="tag in projectData.tags" :key="tag">{{ tag }} <span v-if="tag !== projectData.tags[projectData.tags.length - 1]">|</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div v-if="projectData.helpText" class="border-b border-zinc-700 pb-4 mb-4 text-end text-zinc-500">
+          {{ projectData.helpText }}
         </div>
 
         <div class="flex gap-4">

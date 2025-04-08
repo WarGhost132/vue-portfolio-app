@@ -11,9 +11,10 @@ onMounted(async () => {
   isLoading.value = false
 })
 
-const firstThreeProjects = computed(() => {
-  return projectStore.projects.slice(0, 3)
+const favoriteProjects =computed(() => {
+  return projectStore.projects.filter(project => project.isFavorite)
 })
+
 </script>
 
 <template>
@@ -21,7 +22,7 @@ const firstThreeProjects = computed(() => {
     <h2 class="text-6xl font-bold mb-8">Проекты</h2>
 
     <div class="flex flex-col gap-8">
-      <div v-for="project in firstThreeProjects" :key="project.id">
+      <div v-for="project in favoriteProjects" :key="project.id">
         <ProjectCard :project="project" />
       </div>
     </div>
